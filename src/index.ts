@@ -26,3 +26,13 @@ function add(n1: number , n2: number){
 
 console.log(add(10 , 10))
 console.log(typeof add(10 , 10))
+
+// function 
+// use the optional param by adding ? after var name
+// all optional param came after required param's
+
+function OptionalAndRequired(name : string , age : number , country? : string){
+    return `${name} - ${age} - ${country}`
+}
+
+console.log(OptionalAndRequired("akram"))

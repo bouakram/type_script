@@ -16,4 +16,8 @@ function add(n1, n2) {
 }
 console.log(add(10, 10));
 console.log(typeof add(10, 10));
+function OptionalAndRequired(name, age, country) {
+    return `${name} - ${age} - ${country}`;
+}
+console.log(OptionalAndRequired("akram"));
 //# sourceMappingURL=index.js.map
