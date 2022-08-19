@@ -31,7 +31,7 @@ console.log(typeof add(10 , 10))
 // use the optional param by adding ? after var name
 // all optional param came after required param's
 
-function OptionalAndRequired(name : string , age : number , country? : string){
+function OptionalAndRequired(name : string , age? : number , country? : string){
     return `${name} - ${age} - ${country}`
 }
 
