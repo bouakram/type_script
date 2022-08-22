@@ -36,3 +36,48 @@ function OptionalAndRequired(name : string , age? : number , country? : string){
 }
 
 console.log(OptionalAndRequired("akram"))
+
+// intersection type
+
+type A = {
+    one : string, 
+    two : number,
+    three : boolean
+}
+
+type B = {
+    four : number
+}
+
+type mix = A & B
+
+function intersection (a : mix){
+    console.log(a.one)
+    console.log(a.two)
+    console.log(a.three)
+    console.log(a.four)
+}
+
+intersection({one : "string" , two : 24 , three : true , four : 10})
+
+//  type anotation with object
+
+const myObject : {
+    "one" : string,
+    readonly "two" : number, // can't change the value
+    "three" : boolean,
+    "four" : {
+        "react" : number
+    },
+} = {
+    "one" : "akram",
+    "two" : 25,
+    "three" : true,
+    "four" : {
+        "react" : 100
+    }
+}
+
+myObject.one = "boughazi"
+
+console.log(myObject.one , myObject.two , myObject.three , myObject.four.react)

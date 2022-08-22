@@ -20,4 +20,21 @@ function OptionalAndRequired(name, age, country) {
     return `${name} - ${age} - ${country}`;
 }
 console.log(OptionalAndRequired("akram"));
+function intersection(a) {
+    console.log(a.one);
+    console.log(a.two);
+    console.log(a.three);
+    console.log(a.four);
+}
+intersection({ one: "string", two: 24, three: true, four: 10 });
+const myObject = {
+    "one": "akram",
+    "two": 25,
+    "three": true,
+    "four": {
+        "react": 100
+    }
+};
+myObject.one = "boughazi";
+console.log(myObject.one, myObject.two, myObject.three, myObject.four.react);
 //# sourceMappingURL=index.js.map
