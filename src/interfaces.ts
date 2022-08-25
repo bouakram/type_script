@@ -66,4 +66,16 @@ let userSetting : Setting = {
     external : true
 }
 
-console.log(userSetting)
+console.log( ` the user name is : ${user.name} , and u  userSetting.theme , userSetting.font ,`)
+
+// extends interfaces
+
+interface utilisator {
+    id : number,
+    name : string,
+    age : number
+}
+
+interface admin extends utilisator {
+    super : boolean
+}

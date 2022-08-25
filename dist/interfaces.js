@@ -33,5 +33,5 @@ let userSetting = {
     slider: true,
     external: true
 };
-console.log(userSetting);
+console.log(` the user name is : ${user.name} , and u  userSetting.theme , userSetting.font ,`);
 //# sourceMappingURL=interfaces.js.map
