@@ -31,7 +31,12 @@ let userSetting = {
     theme: true,
     font: 'open sans',
     slider: true,
-    external: true
+    external: true,
+    themes: false,
+    fnt: "",
+    save: function () {
+        throw new Error("Function not implemented.");
+    }
 };
 console.log(` the user name is : ${user.name} , and u  userSetting.theme , userSetting.font ,`);
 //# sourceMappingURL=interfaces.js.map

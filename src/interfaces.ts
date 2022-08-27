@@ -60,10 +60,15 @@ interface Setting {
 }
 
 let userSetting : Setting = {
-    theme : true,
-    font : 'open sans',
-    slider : true,
-    external : true
+    theme: true,
+    font: 'open sans',
+    slider: true,
+    external: true,
+    themes: false,
+    fnt: "",
+    save: function (): void {
+        throw new Error("Function not implemented.")
+    }
 }
 
 console.log( ` the user name is : ${user.name} , and u  userSetting.theme , userSetting.font ,`)
